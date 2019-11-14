@@ -1,0 +1,37 @@
+{% load static %}
+<html>
+    <head>
+        <title>Nescode Technologies</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> 
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}"> 
+    </head>
+    <body>
+        <div class="page-header">
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="/">Nescode Technologies</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+<!--
+    Create by Dhiraj kumar:
+    This base.html include heading,title and title underlined and header background colour.
+    1.We're just loading static file here from static folder which is in blog directory.
+    4.Line it title of the app which you want to display.
+    6,7,8 ,if we remove this line then we are not able to see the style and look and feel app.
+    7.It is used to change the style of complete blog.
+    5,6 will underline the  title of the blog.
+
+
+->

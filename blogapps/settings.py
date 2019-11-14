@@ -120,3 +120,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT=os.path.join(BASE_DIR,'static')
+
+
+"""
+107. you can change the lanaguage of blog app i.e en for english and de for german.
+if your english is not your native language you can change the lanaguge.
+
+109. Blog app should contain current time and publish date and time so we need
+to configure the date and time also.
+
+121. we also need to add a path for static file
+
+"""
